@@ -319,6 +319,8 @@ PRODUCT_PACKAGES += \
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
+    media_codecs_performance_c2.xml \
+    video_system_specs.json
 
 # Mlipay
 ifneq ($(TARGET_IS_TABLET),true)
