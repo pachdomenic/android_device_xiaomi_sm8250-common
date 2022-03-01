@@ -49,7 +49,6 @@
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_streaming">Streaming</string>
 
-<<<<<<< HEAD
 
     <!-- Rotate Tweaks -->
     <string name="rotate_title">Rotation Lock Tweaks</string>
@@ -60,8 +59,14 @@
     <string name="rotate_restore">Restore on closing(iPadOS)</string>
     <string name="rotate_tweaks_footer">"changes orientation locked behavior only.\n*minor set of apps won't work as expected."</string>
 
-=======
     <!-- Refresh Rate Settings -->
     <string name="refresh_rate_tile_title">Refresh Rate</string>
->>>>>>> d451272 (sm8250-common: parts: Introduce Refresh Rate QS tile)
+
+
+    <!-- Refresh Rate -->
+    <string name="refresh_title">Refresh Rate per-app</string>
+    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
+    <string name="refresh_default">Default</string>
+    <string name="refresh_standard">Standard (60Hz)</string>    
+    <string name="refresh_extreme">Extreme (120Hz)</string>    
 </resources>

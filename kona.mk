@@ -253,18 +253,6 @@ PRODUCT_PACKAGES += \
     media_codecs_performance_c2.xml \
     video_system_specs.json
 
-<<<<<<< HEAD
-# Media - Dolby vision
-PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.2.vendor \
-    libcodec2_hidl@1.2.vendor \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libcodec2_hidl_shim.vendor
-
-=======
->>>>>>> parent of bc2071f (sm8250-common: Add support for Dolby Vision)
 ifneq ($(TARGET_IS_TABLET),true)
 # NFC
 PRODUCT_PACKAGES += \
