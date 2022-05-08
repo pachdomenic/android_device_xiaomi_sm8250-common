@@ -1,1 +1,2 @@
 allow servicemanager usbd:binder call;
+allow system_app vendor_sysfs_graphics:file { getattr open read };
