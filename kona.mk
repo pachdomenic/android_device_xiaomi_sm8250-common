@@ -214,8 +214,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
 # Dolby
-PRODUCT_PACKAGES += \
-    XiaomiDolby
+# PRODUCT_PACKAGES += \
+#     XiaomiDolby
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -506,6 +506,11 @@ PRODUCT_COPY_FILES += \
 
 # Signing
 include vendor/lineage-priv/keys/keys.mk
+
+# Touch
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.touchfeature.type=43
+
 
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
