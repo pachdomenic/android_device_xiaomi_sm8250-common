@@ -314,6 +314,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio-service.compat
 endif
 
+# Ril
+PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom \
