@@ -206,6 +206,7 @@ ro.hardware.keystore_desede=true
 
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
+debug.stagefright.c2inputsurface=-1
 vendor.media.omx=0
 
 # NFC
