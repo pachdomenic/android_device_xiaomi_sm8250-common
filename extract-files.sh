@@ -72,6 +72,7 @@ function blob_fixup() {
     case "${1}" in
         vendor/lib/libstagefright_soft_ac4dec.so | vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib64/libdlbdsservice.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;
         system_ext/lib64/libwfdservice.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
@@ -83,6 +84,9 @@ function blob_fixup() {
         vendor/lib64/libril-qc-hal-qmi.so)
             [ "$2" = "" ] && return 0
             sed -i 's|ro.product.vendor.device|ro.vendor.radio.midevice|g' "${2}"
+            ;;
+            vendor/lib64/mediadrm/libwvdrmengine.so | vendor/lib64/libwvhidl.so)
+            grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         *)
             return 1
