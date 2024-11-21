@@ -262,3 +262,6 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Game RefreshRate
+debug.graphics.game_default_frame_rate.disabled=1
