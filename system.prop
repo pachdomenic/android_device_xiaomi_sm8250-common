@@ -36,3 +36,7 @@ vendor.wfdservice64=enable
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# OTA
+lineage.updater.uri=https://raw.githubusercontent.com/pachdomenic/Lineage_OTA/refs/heads/staging/pipa.json
+
