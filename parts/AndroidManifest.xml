@@ -93,7 +93,7 @@
         </activity>
 
         <activity
-            android:name=".rotate.RotateTweaksActivity"
+            android:name=".display.RotateTweaksActivity"
             android:label="@string/rotate_title"
             android:exported="true"
             android:theme="@style/Theme.SubSettingsBase_v31">

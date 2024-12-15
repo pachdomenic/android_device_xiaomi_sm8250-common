@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.rotate;
+package org.lineageos.settings.display;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-import co.aospa.settings.rotate.RotateTweaksSettingsFragment;
+import org.lineageos.settings.display.RotateTweaksSettingsFragment;
 
 public class RotateTweaksActivity extends CollapsingToolbarBaseActivity {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package co.aospa.settings.rotate;
+package org.lineageos.settings.display;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
@@ -25,7 +25,7 @@ import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 
-import co.aospa.settings.R;
+import org.lineageos.settings.R;
 
 import java.util.Arrays;
 
