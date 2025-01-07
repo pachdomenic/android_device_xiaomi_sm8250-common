@@ -72,18 +72,17 @@ write_headers "alioth apollon cas cmi dagu elish enuma lmi munch pipa psyche thy
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 # Exclude blobs from tablet builds
-printf '\n%s\n' 'ifneq ($(TARGET_IS_TABLET),true)' >> "$PRODUCTMK"
-
-write_makefiles "${MY_DIR}/proprietary-files-phone.txt" true
-
-printf '%s\n' 'endif' >> "$PRODUCTMK"
+# printf '\n%s\n' 'ifneq ($(TARGET_IS_TABLET),true)' >> "$PRODUCTMK"
+#
+# write_makefiles "${MY_DIR}/proprietary-files-phone.txt" true
+#
+# printf '%s\n' 'endif' >> "$PRODUCTMK"
 
 # Finish
 write_footers
 
 if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
-    source "${MY_DIR}/../../${VENDOR}/${DEVICE}/setup-makefiles.sh"
     setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
     # Warning headers and guards
