@@ -38,10 +38,7 @@
 
     <!-- Whether to show a alarm dialog when device's usb port is overheating. -->
     <integer name="config_showUsbPortAlarm">1</integer>
-<<<<<<< HEAD
 
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
-=======
->>>>>>> 5559a1b (sm8250-common: Enable USB and skin temperature warnings)
 </resources>
