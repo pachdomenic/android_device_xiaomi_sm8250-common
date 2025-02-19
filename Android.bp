@@ -6,6 +6,13 @@
 
 soong_namespace {
     imports: [
+<<<<<<< HEAD
+=======
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/lineage/interfaces/power-libperfmgr",
+        "hardware/qcom-caf/common/libqti-perfd-client",
+>>>>>>> d0731361 (sm8250-common: switch to common QCOM AIDL bootctrl HAL)
         "hardware/xiaomi",
         "hardware/qcom-caf/bootctrl",
     ],
