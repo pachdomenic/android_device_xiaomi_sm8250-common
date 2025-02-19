@@ -96,7 +96,7 @@
             android:name=".display.RotateTweaksActivity"
             android:label="@string/rotate_title"
             android:exported="true"
-            android:theme="@style/Theme.SubSettingsBase_v31">
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
