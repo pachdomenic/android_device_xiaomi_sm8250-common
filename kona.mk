@@ -316,6 +316,12 @@ PRODUCT_COPY_FILES += \
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor # Needed by CNE app
+    
+# Ril
+ifneq ($(TARGET_IS_TABLET),true)
+PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat
+endif
 
 # Rootdir
 PRODUCT_PACKAGES += \
