@@ -151,16 +151,23 @@ def dolby_client_fixup(file_path, obj_file_path):
 
 # Define blob fixups
 blob_fixups: blob_fixups_user_type = {
+    # WFD fixups
     'system_ext/lib64/libwfdmmsrc_system.so': wfdmmsrc_system_fixup,
     'system_ext/lib64/libwfdnative.so': wfdnative_fixup,
     'system_ext/lib64/libwfdservice.so': wfdservice_fixup,
+    
+    # System component fixups
     'vendor/etc/init/init.mi_thermald.rc': mi_thermald_rc_fixup,
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': atfwd_policy_fixup,
+    'vendor/lib64/libril-qc-hal-qmi.so': libril_fixup,
+    
+    # DRM fixups
+    'vendor/lib64/mediadrm/libwvdrmengine.so': wvdrm_fixup,
+    'vendor/lib64/libwvhidl.so': wvdrm_fixup,
+    
+    # Dolby fixups
     'odm/etc/dolby/multimedia_dolby_dax_default.xml': dolby_dax_xml_fixup,
     'odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service': dolby_service_fixup,
-    'vendor/lib64/mediadrm/libwvdrmengine.so': wvdrm_fixup,
-    'vendor/lib64/libril-qc-hal-qmi.so': libril_fixup,
-    'vendor/lib64/libwvhidl.so': wvdrm_fixup,
     'vendor/lib/c2.dolby.avc.dec.so': dolby_codec_fixup,
     'vendor/lib/c2.dolby.avc.sec.dec.so': dolby_codec_fixup,
     'vendor/lib/c2.dolby.hevc.dec.so': dolby_codec_fixup,
