@@ -253,6 +253,7 @@ PRODUCT_PACKAGES += \
     media_codecs_performance_c2.xml \
     video_system_specs.json
 
+<<<<<<< HEAD
 # Media - Dolby vision
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor \
@@ -262,6 +263,8 @@ PRODUCT_PACKAGES += \
     libsfplugin_ccodec_utils.vendor \
     libcodec2_hidl_shim.vendor
 
+=======
+>>>>>>> parent of bc2071f (sm8250-common: Add support for Dolby Vision)
 ifneq ($(TARGET_IS_TABLET),true)
 # NFC
 PRODUCT_PACKAGES += \
@@ -391,10 +394,6 @@ PRODUCT_PACKAGES += \
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
 
 # Vibrator
 ifneq ($(TARGET_IS_TABLET),true)

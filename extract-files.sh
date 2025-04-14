@@ -100,6 +100,7 @@ function blob_fixup() {
         *)
             return 1
             ;;
+<<<<<<< HEAD
        vendor/lib/c2.dolby.avc.dec.so | vendor/lib/c2.dolby.avc.sec.dec.so | vendor/lib/c2.dolby.hevc.dec.so | vendor/lib/c2.dolby.hevc.sec.dec.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
@@ -109,6 +110,8 @@ function blob_fixup() {
         vendor/lib/c2.dolby.client.so)
             "${PATCHELF}" --add-needed "libcodec2_hidl_shim.so" "${2}"
             ;;
+=======
+>>>>>>> parent of bc2071f (sm8250-common: Add support for Dolby Vision)
     esac
 
     return 0
