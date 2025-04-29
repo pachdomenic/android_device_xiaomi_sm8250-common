@@ -80,6 +80,7 @@ endif
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_kona
 TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_kona
+$(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):init_xiaomi_kona)>>>>>>> 842be10 (sm8250-common: Set vendor init lib via soong config)
 
 # Kernel
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
