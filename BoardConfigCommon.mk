@@ -75,7 +75,7 @@ endif
 
 # Init
 TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_kona
-$(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH))
+$(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):init_xiaomi_kona)
 
 # Kernel
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
@@ -97,6 +97,7 @@ TARGET_KERNEL_CONFIG := \
     vendor/kona-perf_defconfig \
     vendor/debugfs.config \
     vendor/xiaomi/sm8250-common.config
+TARGET_KERNEL_VERSION := 4.19
 
 # Media
 TARGET_USES_ION := true
@@ -147,6 +148,7 @@ TARGET_BOARD_PLATFORM := kona
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 ifneq ($(TARGET_IS_TABLET),true)
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor_phone.prop
@@ -243,4 +245,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/sm8250-common/BoardConfigVendor.mk
+include vendor/xiaomi/pipa/BoardConfigVendor.mk
