@@ -183,8 +183,6 @@ on boot
     chown root system /sys/module/migt/parameters/reset_clus_affinity_uidlist
     chmod 0664 /sys/module/migt/parameters/reset_clus_affinity_uidlist
 
-<<<<<<< HEAD
-=======
     # VPP tuning
     chown system system /mnt/vendor/persist/vpp/tunings.txt
     chmod 0666 /mnt/vendor/persist/vpp/tunings.txt
@@ -197,7 +195,6 @@ on boot
     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
     chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
 
->>>>>>> 34bd836 (sm8250-common: Provide Sepolicy and overlays for FPS Counter access)
 on property:persist.vendor.sys.fp.fod.large_field=1
     write sys/bus/i2c/devices/3-0049/fod_area 1
 
