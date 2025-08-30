@@ -99,9 +99,6 @@ TARGET_KERNEL_CONFIG := \
     vendor/xiaomi/sm8250-common.config
 TARGET_KERNEL_VERSION := 4.19
 
-# Media
-TARGET_USES_ION := true
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 ifeq ($(TARGET_IS_VAB),true)
