@@ -7,23 +7,14 @@
 #ifndef LIBINIT_VARIANT_H
 #define LIBINIT_VARIANT_H
 
-#include <string>
+#include <libvariant.h>
+
 #include <vector>
 
-typedef struct variant_info {
-    std::string hwc_value;
-    std::string sku_value;
-
-    std::string brand;
-    std::string device;
-    std::string marketname;
-    std::string model;
-    std::string build_fingerprint;
-
-    bool nfc;
-} variant_info_t;
-
 void search_variant(const std::vector<variant_info_t> variants);
+
+void search_variant(const std::vector<variant_info>& variants);
+
 
 void set_variant_props(const variant_info_t variant);
 
