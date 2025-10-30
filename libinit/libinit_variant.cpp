@@ -3,9 +3,12 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
-#include <libinit_utils.h>
+
 
 #include <libinit_variant.h>
+
+#include <libinit_utils.h>
+
 
 #include <android-base/logging.h>
 #include <android-base/properties.h>
