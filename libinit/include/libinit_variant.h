@@ -10,7 +10,6 @@
 
 #include <vector>
 
-
 struct variant_info {
     std::string hwc_value;
     std::string sku_value;
@@ -24,7 +23,6 @@ struct variant_info {
     bool nfc;
 };
 
-void search_variant(const std::vector<variant_info> variants);
+void search_variant(const std::vector<variant_info>& variants);
 
-void set_variant_props(const variant_info variant);
-
+void set_variant_props(const variant_info& variant);
