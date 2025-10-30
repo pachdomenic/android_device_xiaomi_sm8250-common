@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef LIBINIT_VARIANT_H
-#define LIBINIT_VARIANT_H
+#pragma once
 
 #include <libvariant.h>
 
@@ -17,5 +16,3 @@ void search_variant(const std::vector<variant_info>& variants);
 
 
 void set_variant_props(const variant_info_t variant);
-
-#endif  // LIBINIT_VARIANT_H
