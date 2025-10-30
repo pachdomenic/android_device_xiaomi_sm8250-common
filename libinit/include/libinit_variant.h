@@ -10,9 +10,21 @@
 
 #include <vector>
 
-void search_variant(const std::vector<variant_info_t> variants);
 
-void search_variant(const std::vector<variant_info>& variants);
+struct variant_info {
+    std::string hwc_value;
+    std::string sku_value;
 
+    std::string brand;
+    std::string device;
+    std::string marketname;
+    std::string model;
+    std::string build_fingerprint;
 
-void set_variant_props(const variant_info_t variant);
+    bool nfc;
+};
+
+void search_variant(const std::vector<variant_info> variants);
+
+void set_variant_props(const variant_info variant);
+
