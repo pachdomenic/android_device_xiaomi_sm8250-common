@@ -73,7 +73,7 @@
                 android:resource="@string/summary_empty" />
             <meta-data
                 android:name="com.android.settings.order"
-                android:value="-255" />
+                android:value="9999" />
         </activity>
 
         <activity
@@ -92,7 +92,7 @@
                 android:resource="@string/thermal_summary" />
             <meta-data
                 android:name="com.android.settings.order"
-                android:value="1" />
+                android:value="9999" />
         </activity>
 
         <activity
